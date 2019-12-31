@@ -1,0 +1,86 @@
+/*
+Name: Aaditya Mukherjee
+Affiliation: Computer Science Student at UMass Lowell
+E-mail: Aaditya_Mukherjee@student.uml.edu
+91.61 GUI Programming I, Assignment 4: Styling Your First Web Page With CSS
+File created on: 12/25/2019
+Description: This is the index page that I made on assignment 3 styled with CSS. It contains links to the 2 previous assignments of this course.
+*/
+
+
+body {
+
+        background-image: url("trees.jpg"); /*Tree background applied to the entire page */
+        background-repeat:no-repeat;
+        background-size: 100%;
+}
+
+#wrapper{                                 /*The container with all the main content has been centered with a white background and helvetica font
+                                            has been assumed for all the content */
+      background-color: white;
+      width: 800px;
+      margin: auto;
+      font-family: helvetica, garamond, arial;
+      box-shadow: 5px 10px;
+}
+
+#header{                                  /* Aaditya's GUI World is the main heading written in white color with a dark blue backgorund*/
+  background-color: #164066;
+  color: #ffffff;
+  padding: 10px;
+}
+
+h2{
+  text-align: center;
+}
+
+#content{                               /*This was done so the content does not cling to the edges and is more centered*/
+  padding: 10px;
+}
+
+#writeups{
+  float: right; /*float has been used both in the div id 'pic' and 'writeups' to provide a more natural flow of content */
+  font-style: italic;
+}
+
+#pic{
+  float:left;
+  margin: 10px;
+}
+
+#footer{
+  clear: both;   /*so the white background of the container is extended to the footer */
+  background-color: #164066;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+#tableu{          /*the table has background color blue, no borders and white color to give it a more vibrant look */
+  margin: 10px auto;
+  border-collapse: collapse;
+  background-color: #FB660F;
+  color:white;
+  width: 50%;
+}
+
+#tableu th{
+  border:none;
+  border-bottom: 1px solid #F6F6F6;
+  padding: 2px;
+  text-align: center;
+}
+
+#tableu td{
+  border: none;
+  padding: 2px;
+  text-align: center;
+}
+
+#tableu td a{
+  text-decoration: none;
+	color: #000000;
+}
+
+#tableu td a:hover{     /*hover is used to provide a different color when hovering the mouse over an assignment */
+  color: #ffffff;
+}
